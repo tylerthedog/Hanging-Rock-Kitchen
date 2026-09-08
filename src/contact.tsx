@@ -16,7 +16,7 @@ function ContactPage() {
         {/* Background Hero Image */}
         <div className="absolute inset-0 z-0 overflow-hidden">
           <ImageWithPlaceholder
-            src="https://raw.githubusercontent.com/tylerthedog/Hanging-Rock-Kitchen/main/Contact/4.png"
+            src="https://raw.githubusercontent.com/tylerthedog/Hanging-Rock-Kitchen/main/Site%20Images/Contact/3.png"
             alt="Hanging Rock Kitchen Contact"
             className="w-full h-full object-cover"
             loading="eager"
@@ -28,15 +28,12 @@ function ContactPage() {
         </div>
 
         {/* Hero Content Overlay */}
-        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center py-8 sm:py-10 space-y-3">
-          <div className="space-y-2">
-            <span className="text-[#8db379] font-sans text-xs font-bold tracking-[0.25em] uppercase block">
-              Opening hours &bull; Contact &bull; Directions
-            </span>
+        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center py-6 sm:py-8 space-y-2">
+          <div className="space-y-1.5">
             <h1 className="font-sans font-black text-2xl sm:text-3xl md:text-4xl text-white uppercase tracking-tight drop-shadow-lg">
               Contact
             </h1>
-            <p className="font-lora text-stone-200 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto drop-shadow-sm">
+            <p className="font-lora text-stone-200 text-xs sm:text-sm leading-snug sm:leading-normal max-w-2xl mx-auto drop-shadow-sm">
               Check our opening times, give us a call or WhatsApp to book a table, order a takeaway, or just ask us a question, and tap the 'Get Directions' button if you're visiting us. We're looking forward to welcoming you!
             </p>
           </div>
@@ -44,25 +41,19 @@ function ContactPage() {
       </section>
 
       {/* Main content area */}
-      <main className="flex-1 max-w-6xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20 space-y-16" id="contact-content-container">
+      <main className="flex-1 max-w-6xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 md:py-10 space-y-8" id="contact-content-container">
         
         {/* Contact & Location Grid: Left = Opening times & Contact, Right = Location & Directions */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch" id="contact-main-grid">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch" id="contact-main-grid">
           
           {/* Left Block: Opening times, WhatsApp & Call buttons, Public Holidays */}
-          <section className="bg-white border border-stone-200 shadow-sm p-6 sm:p-8 md:p-10 flex flex-col justify-between space-y-6" id="opening-times-section">
-            <div className="space-y-6">
-              <div className="border-b border-stone-100 pb-5">
-                <span className="text-[#38492e] font-sans text-xs font-bold tracking-[0.2em] uppercase block mb-1">
-                  Trading Hours
-                </span>
+          <section className="bg-white border border-stone-200 shadow-sm p-5 sm:p-6 md:p-7 flex flex-col justify-between space-y-4" id="opening-times-section">
+            <div className="space-y-4">
+              <div className="border-b border-stone-100 pb-3">
                 <h2 className="font-sans font-black text-2xl sm:text-3xl text-stone-900 uppercase tracking-tight flex items-center gap-2.5">
                   <Clock className="w-6 h-6 text-[#38492e] shrink-0" />
                   <span>Opening Times</span>
                 </h2>
-                <p className="font-lora text-stone-500 text-xs sm:text-sm mt-1">
-                  Eat in, order out, or book a table
-                </p>
               </div>
 
               {/* Schedule listing */}
@@ -79,11 +70,9 @@ function ContactPage() {
                   <span className="font-sans font-semibold text-stone-900">Wednesday</span>
                   <span className="font-sans text-stone-400 font-medium px-2 py-0.5 bg-stone-100 text-xs">Closed</span>
                 </div>
-                <div className="flex flex-col sm:flex-row sm:items-center justify-between py-2.5 gap-1">
+                <div className="flex items-center justify-between py-2">
                   <span className="font-sans font-semibold text-stone-900">Thursday</span>
-                  <span className="font-sans text-stone-800 font-medium">
-                    16:30 – 19:30 Sit-down <span className="text-[#38492e] font-semibold text-xs">(20:00 for Takeaways)</span>
-                  </span>
+                  <span className="font-sans text-stone-400 font-medium px-2 py-0.5 bg-stone-100 text-xs">Closed</span>
                 </div>
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between py-2.5 gap-1">
                   <span className="font-sans font-semibold text-stone-900">Friday</span>
@@ -147,19 +136,13 @@ function ContactPage() {
           </section>
 
           {/* Right Block: Location, Google Map Embed & Get Directions */}
-          <section className="bg-white border border-stone-200 shadow-sm p-6 sm:p-8 md:p-10 flex flex-col justify-between space-y-6" id="location-directions-section">
+          <section className="bg-white border border-stone-200 shadow-sm p-5 sm:p-6 md:p-7 flex flex-col justify-between space-y-4" id="location-directions-section">
             <div className="space-y-4">
-              <div className="border-b border-stone-100 pb-5">
-                <span className="text-[#38492e] font-sans text-xs font-bold tracking-[0.2em] uppercase block mb-1">
-                  Find Us In Pringle Bay
-                </span>
+              <div className="border-b border-stone-100 pb-3">
                 <h2 className="font-sans font-black text-2xl sm:text-3xl text-stone-900 uppercase tracking-tight flex items-center gap-2.5">
                   <MapPin className="w-6 h-6 text-[#38492e] shrink-0" />
                   <span>Location &amp; directions</span>
                 </h2>
-                <p className="font-lora text-stone-600 text-xs sm:text-sm mt-1">
-                  440 Diagonal Road, Pringle Bay, Western Cape, 7196
-                </p>
               </div>
 
               {/* Embedded Google Map */}

@@ -21,7 +21,7 @@ export default function Logo({
     >
       {!hasError ? (
         <img
-          src="https://raw.githubusercontent.com/tylerthedog/Hanging-Rock-Kitchen/main/Logo/W.png"
+          src="https://raw.githubusercontent.com/tylerthedog/Hanging-Rock-Kitchen/main/Site%20Images/Logo/W.png"
           alt="Hanging Rock Kitchen Logo"
           className="w-full h-full object-contain rounded-full drop-shadow-xs"
           referrerPolicy="no-referrer"

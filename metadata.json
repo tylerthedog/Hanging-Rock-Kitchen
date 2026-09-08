@@ -2,5 +2,7 @@
   "name": "Hanging Rock Kitchen",
   "description": "A homely and inviting wood-fired pizza kitchen in Pringle Bay with sea and mountain views, good music, and old-world shabby chic vibes.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }

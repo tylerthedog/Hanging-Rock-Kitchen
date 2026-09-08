@@ -15,7 +15,7 @@ export default function HomeSection({ setActiveTab: _setActiveTab }: HomeSection
         {/* Background Hero Image */}
         <div className="absolute inset-0 z-0 overflow-hidden">
           <ImageWithPlaceholder
-            src="https://raw.githubusercontent.com/tylerthedog/Hanging-Rock-Kitchen/main/Welcome/1.png"
+            src="https://raw.githubusercontent.com/tylerthedog/Hanging-Rock-Kitchen/main/Site%20Images/Welcome/Untitled%20design%20(7).png"
             alt="Hanging Rock Kitchen Welcome"
             className="w-full h-full object-cover"
             loading="eager"
@@ -54,7 +54,7 @@ export default function HomeSection({ setActiveTab: _setActiveTab }: HomeSection
       </section>
 
       {/* Dining Choice Section: Order Takeaway vs Book a Table */}
-      <section className="w-full bg-white py-6 sm:py-8 flex items-center justify-center" id="dining-options-section">
+      <section className="w-full bg-white pt-4 pb-2 sm:pt-6 sm:pb-3 flex items-center justify-center" id="dining-options-section">
         <div className="w-full max-w-3xl mx-auto px-2 sm:px-6 text-center">
           <div className="flex flex-row items-center justify-center gap-2 sm:gap-4">
             <a
@@ -83,11 +83,11 @@ export default function HomeSection({ setActiveTab: _setActiveTab }: HomeSection
       </section>
 
       {/* Menu Image Section */}
-      <section className="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-12" id="menu-section">
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 pt-2 pb-8 sm:pt-3 sm:pb-12" id="menu-section">
         <div className="flex flex-col items-center justify-center">
           <div className="w-full max-w-2xl bg-white border border-stone-200 shadow-sm overflow-hidden" id="menu-image-card">
             <ImageWithPlaceholder
-              src="https://raw.githubusercontent.com/tylerthedog/Hanging-Rock-Kitchen/main/Menu/Hanging%20Rock%20Kitchen%20Menu%20(1).png"
+              src="https://raw.githubusercontent.com/tylerthedog/Hanging-Rock-Kitchen/main/Site%20Images/Welcome/Hanging%20Rock%20Kitchen%20Menu%20(1).png"
               alt="Hanging Rock Kitchen Menu - Wood-fired pizza and seasonal offerings"
               className="w-full h-auto object-contain block mx-auto"
               loading="lazy"
