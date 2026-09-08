@@ -16,7 +16,8 @@ export default function Navigation({ activePage, activeTab }: NavigationProps) {
 
   const navItems: { id: PageId; label: string; href: string }[] = [
     { id: 'welcome', label: 'Welcome', href: 'index.html' },
-    { id: 'contact', label: 'Contact', href: 'contact.html' },
+    { id: 'menu', label: 'Menu', href: 'menu.html' },
+    { id: 'contact', label: 'Visit Us', href: 'contact.html' },
   ];
 
   return (

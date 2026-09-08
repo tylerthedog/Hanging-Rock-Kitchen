@@ -28,10 +28,34 @@ function ContactPage() {
         </div>
 
         {/* Hero Content Overlay */}
-        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center py-6 sm:py-8 space-y-2">
-          <div className="space-y-1.5">
+        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center py-6 sm:py-8 space-y-4">
+          
+          {/* WhatsApp Us & Call Us buttons moved to the top of the page */}
+          <div className="flex flex-row items-center justify-center gap-2 sm:gap-4 pt-1" id="visit-top-action-buttons">
+            <a
+              href="https://wa.me/27798983481?text=Hi%20Gary%20%26%20Karen,%20I%20would%20like%20to%20book%20a%20table%20or%20order%20takeaway"
+              target="_blank"
+              rel="noopener noreferrer"
+              id="top-contact-whatsapp-btn"
+              className="flex-1 sm:flex-none sm:w-auto inline-flex items-center justify-center gap-1.5 sm:gap-2 px-3 sm:px-6 py-2.5 sm:py-3.5 bg-emerald-600 hover:bg-emerald-700 text-white font-sans text-[11px] sm:text-xs font-bold uppercase tracking-[0.08em] sm:tracking-[0.16em] shadow-lg transition-all transform hover:-translate-y-0.5 text-center"
+            >
+              <MessageCircle className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
+              <span>WhatsApp Us</span>
+            </a>
+
+            <a
+              href="tel:+27798983481"
+              id="top-contact-call-btn"
+              className="flex-1 sm:flex-none sm:w-auto inline-flex items-center justify-center gap-1.5 sm:gap-2 px-3 sm:px-6 py-2.5 sm:py-3.5 bg-stone-900/90 hover:bg-stone-800 text-white border border-stone-600 font-sans text-[11px] sm:text-xs font-bold uppercase tracking-[0.08em] sm:tracking-[0.16em] shadow-lg transition-all transform hover:-translate-y-0.5 text-center"
+            >
+              <Phone className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
+              <span>Call Us</span>
+            </a>
+          </div>
+
+          <div className="space-y-1.5 pt-1">
             <h1 className="font-sans font-black text-2xl sm:text-3xl md:text-4xl text-white uppercase tracking-tight drop-shadow-lg">
-              Contact
+              Visit Us
             </h1>
             <p className="font-lora text-stone-200 text-xs sm:text-sm leading-snug sm:leading-normal max-w-2xl mx-auto drop-shadow-sm">
               Check our opening times, give us a call or WhatsApp to book a table, order a takeaway, or just ask us a question, and tap the 'Get Directions' button if you're visiting us. We're looking forward to welcoming you!
