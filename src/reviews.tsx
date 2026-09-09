@@ -33,7 +33,7 @@ function ReviewsPage() {
         {/* Background Hero Image */}
         <div className="absolute inset-0 z-0 overflow-hidden">
           <img
-            src="https://raw.githubusercontent.com/tylerthedog/Hanging-Rock-Kitchen/main/Reviews/5.png"
+            src="https://raw.githubusercontent.com/tylerthedog/Hanging-Rock-Kitchen/main/public/Images/hero.png"
             alt="Hanging Rock Kitchen Reviews"
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"

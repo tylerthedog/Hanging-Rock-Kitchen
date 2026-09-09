@@ -16,7 +16,7 @@ function MenuPage() {
         {/* Background Hero Image */}
         <div className="absolute inset-0 z-0 overflow-hidden">
           <ImageWithPlaceholder
-            src="https://raw.githubusercontent.com/tylerthedog/Hanging-Rock-Kitchen/main/Site%20Images/Welcome/Untitled%20design%20(7).png"
+            src="https://raw.githubusercontent.com/tylerthedog/Hanging-Rock-Kitchen/main/public/Images/hero.png"
             alt="Hanging Rock Kitchen Menu"
             className="w-full h-full object-cover"
             loading="eager"
@@ -70,7 +70,8 @@ function MenuPage() {
         <div className="flex flex-col items-center justify-center space-y-6" id="menu-image-wrapper">
           <div className="w-full max-w-2xl bg-white border border-stone-200 shadow-sm overflow-hidden" id="menu-image-card">
             <ImageWithPlaceholder
-              src="https://raw.githubusercontent.com/tylerthedog/Hanging-Rock-Kitchen/main/Site%20Images/Welcome/Hanging%20Rock%20Kitchen%20Menu%20(1).png"
+              src="/Images/menu.jpg"
+              fallbackSrc="https://raw.githubusercontent.com/tylerthedog/Hanging-Rock-Kitchen/main/public/Images/menu.png"
               alt="Hanging Rock Kitchen Menu - Wood-fired pizza and seasonal offerings"
               className="w-full h-auto object-contain block mx-auto"
               loading="eager"

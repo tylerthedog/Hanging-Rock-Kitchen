@@ -15,7 +15,7 @@ export default function HomeSection({ setActiveTab: _setActiveTab }: HomeSection
         {/* Background Hero Image */}
         <div className="absolute inset-0 z-0 overflow-hidden">
           <ImageWithPlaceholder
-            src="https://raw.githubusercontent.com/tylerthedog/Hanging-Rock-Kitchen/main/Site%20Images/Welcome/Untitled%20design%20(7).png"
+            src="https://raw.githubusercontent.com/tylerthedog/Hanging-Rock-Kitchen/main/public/Images/hero.png"
             alt="Hanging Rock Kitchen Welcome"
             className="w-full h-full object-cover"
             loading="eager"

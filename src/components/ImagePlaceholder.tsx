@@ -86,6 +86,7 @@ export default function ImagePlaceholder({
 
 export interface ImageWithPlaceholderProps extends React.ComponentPropsWithoutRef<'img'> {
   src?: string;
+  fallbackSrc?: string;
   alt?: string;
   className?: string;
   loading?: 'lazy' | 'eager';
@@ -97,6 +98,7 @@ export interface ImageWithPlaceholderProps extends React.ComponentPropsWithoutRe
 
 export function ImageWithPlaceholder({
   src,
+  fallbackSrc,
   alt,
   className = '',
   placeholderLabel,
@@ -104,9 +106,23 @@ export function ImageWithPlaceholder({
   isBackground = false,
   ...props
 }: ImageWithPlaceholderProps) {
+  const [currentSrc, setCurrentSrc] = useState(src);
   const [hasError, setHasError] = useState(false);
 
-  if (!src || hasError) {
+  React.useEffect(() => {
+    setCurrentSrc(src);
+    setHasError(false);
+  }, [src]);
+
+  const handleError = () => {
+    if (fallbackSrc && currentSrc !== fallbackSrc) {
+      setCurrentSrc(fallbackSrc);
+    } else {
+      setHasError(true);
+    }
+  };
+
+  if (!currentSrc || hasError) {
     return (
       <ImagePlaceholder
         label={placeholderLabel || alt || 'Image Placeholder'}
@@ -119,10 +135,10 @@ export function ImageWithPlaceholder({
 
   return (
     <img
-      src={src}
+      src={currentSrc}
       alt={alt}
       className={className}
-      onError={() => setHasError(true)}
+      onError={handleError}
       referrerPolicy="no-referrer"
       {...props}
     />
