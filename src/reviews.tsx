@@ -2,6 +2,7 @@ import { StrictMode, useEffect } from 'react';
 import { createRoot } from 'react-dom/client';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
+import { ImageWithPlaceholder } from './components/ImagePlaceholder';
 import { Sparkles } from 'lucide-react';
 import './index.css';
 
@@ -32,13 +33,15 @@ function ReviewsPage() {
       <section className="relative overflow-hidden w-full bg-stone-950 text-white min-h-[320px] md:min-h-[400px] flex items-center justify-center" id="reviews-hero-section">
         {/* Background Hero Image */}
         <div className="absolute inset-0 z-0 overflow-hidden">
-          <img
-            src="https://raw.githubusercontent.com/tylerthedog/Hanging-Rock-Kitchen/main/public/Images/hero.png"
+          <ImageWithPlaceholder
+            src="/Images/hero.png"
+            fallbackSrc="https://raw.githubusercontent.com/tylerthedog/Hanging-Rock-Kitchen/main/public/Images/hero.png"
             alt="Hanging Rock Kitchen Reviews"
             className="w-full h-full object-cover"
-            referrerPolicy="no-referrer"
             loading="eager"
             id="reviews-hero-image"
+            placeholderLabel="Reviews Hero Image"
+            isBackground={true}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/60 to-stone-950/70" />
         </div>

@@ -11,7 +11,16 @@ export default function Logo({
   size = 56,
   showText: _showText = false,
 }: LogoProps) {
+  const [imgSrc, setImgSrc] = useState('/Images/logo.png');
   const [hasError, setHasError] = useState(false);
+
+  const handleError = () => {
+    if (imgSrc !== 'https://raw.githubusercontent.com/tylerthedog/Hanging-Rock-Kitchen/main/public/Images/logo.png') {
+      setImgSrc('https://raw.githubusercontent.com/tylerthedog/Hanging-Rock-Kitchen/main/public/Images/logo.png');
+    } else {
+      setHasError(true);
+    }
+  };
 
   return (
     <div
@@ -21,12 +30,12 @@ export default function Logo({
     >
       {!hasError ? (
         <img
-          src="https://raw.githubusercontent.com/tylerthedog/Hanging-Rock-Kitchen/main/public/Images/logo.png"
+          src={imgSrc}
           alt="Hanging Rock Kitchen Logo"
           className="w-full h-full object-contain rounded-full drop-shadow-xs"
           referrerPolicy="no-referrer"
           loading="eager"
-          onError={() => setHasError(true)}
+          onError={handleError}
           id="logo-img"
         />
       ) : (
