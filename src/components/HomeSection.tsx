@@ -47,7 +47,7 @@ export default function HomeSection({ setActiveTab: _setActiveTab }: HomeSection
               target="_blank"
               rel="noopener noreferrer"
               id="book-table-btn"
-              className="flex-1 sm:flex-none sm:w-auto inline-flex items-center justify-center gap-2 px-4 sm:px-7 py-3 sm:py-4 bg-stone-900/90 hover:bg-stone-800 text-white border border-stone-600 font-sans text-xs sm:text-sm font-bold uppercase tracking-[0.1em] sm:tracking-[0.18em] shadow-lg transition-all transform hover:-translate-y-0.5 text-center"
+              className="flex-1 sm:flex-none sm:w-auto inline-flex items-center justify-center gap-2 px-4 sm:px-7 py-3 sm:py-4 bg-[#38492e] hover:bg-[#2c3a24] text-white font-sans text-xs sm:text-sm font-bold uppercase tracking-[0.1em] sm:tracking-[0.18em] shadow-lg hover:shadow-[#38492e]/30 transition-all transform hover:-translate-y-0.5 text-center"
             >
               <Calendar className="w-4 h-4 sm:w-4.5 sm:h-4.5 shrink-0" />
               <span>Book a Table</span>
@@ -78,7 +78,7 @@ export default function HomeSection({ setActiveTab: _setActiveTab }: HomeSection
                   Takeaway
                 </span>
                 <p className="mb-1.5">
-                  We offer takeout for our menu, with the sole exception of our fresh fish, which is always best enjoyed straight from the kitchen.
+                  We offer takeout from our menu, with the sole exception of our fresh fish, which is always best enjoyed straight from the kitchen.
                 </p>
                 <p className="text-stone-300">
                   To place a takeout order, simply send us a message via WhatsApp. Pre-orders are highly encouraged as our oven gets busy! We will reply promptly to confirm your pickup time.

@@ -47,7 +47,7 @@ function MenuPage() {
               target="_blank"
               rel="noopener noreferrer"
               id="menu-book-table-btn"
-              className="flex-1 sm:flex-none sm:w-auto inline-flex items-center justify-center gap-1.5 sm:gap-2 px-3 sm:px-6 py-2.5 sm:py-3.5 bg-stone-900/90 hover:bg-stone-800 text-white border border-stone-600 font-sans text-[11px] sm:text-xs font-bold uppercase tracking-[0.08em] sm:tracking-[0.16em] shadow-lg transition-all transform hover:-translate-y-0.5 text-center"
+              className="flex-1 sm:flex-none sm:w-auto inline-flex items-center justify-center gap-1.5 sm:gap-2 px-3 sm:px-6 py-2.5 sm:py-3.5 bg-[#38492e] hover:bg-[#2c3a24] text-white font-sans text-[11px] sm:text-xs font-bold uppercase tracking-[0.08em] sm:tracking-[0.16em] shadow-lg hover:shadow-[#38492e]/30 transition-all transform hover:-translate-y-0.5 text-center"
             >
               <Calendar className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
               <span>Book a Table</span>
